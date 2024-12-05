@@ -3,6 +3,7 @@
 import { CertificationCard } from "./certification-card"
 import { Button } from "@/components/ui/button"
 import { ArrowUpRight } from 'lucide-react'
+import Link from "next/link"
 import { redirect } from "next/navigation"
 
 export function CertificationsSection() {
@@ -13,11 +14,11 @@ export function CertificationsSection() {
           <h2 className="text-3xl md:text-4xl font-bold">Nossos Certificados</h2>
           <div className="flex items-center justify-between">
             <p className="text-gray-600">
-              Oferecemos uma variedade de certificados digitais para atender às necessidades específicas de cada cliente.
+              Caso precise de ajuda para instalar os drivers, clique no botão ao lado.
             </p>
-            <Button variant="link" className="text-[#ffc200] hidden lg:flex items-center gap-2 hover:text-[#ffc200]/90">
-              Ver todos os certificados <ArrowUpRight className="h-4 w-4" />
-            </Button>
+            <Link href={'https://www.soluti.com.br/duvidas-e-suporte/suporte-certificado-a3/?srsltid=AfmBOorB6lFGLbQb6QHnVvwwWZDwVKP6zXY1jWyScC2PC54mpnz4W8B3'} className="text-[#ffc200] hidden lg:flex items-center gap-2 hover:text-[#ffc200]/90">
+              Drivers de instalação <ArrowUpRight className="h-8 w-8" />
+            </Link>
           </div>
         </div>
 

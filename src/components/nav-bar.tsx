@@ -7,7 +7,7 @@ import { redirect } from "next/navigation"
 
 export function NavBar() {
   return (
-    <nav className="flex items-center justify-between p-6">
+    <nav className="flex w-full items-center justify-between p-6">
       <div className="flex items-center gap-2">
         <Image 
           src="/logo.jpeg" 
@@ -26,14 +26,14 @@ export function NavBar() {
         <Link href="#produtos" className="text-sm font-medium text-[#2d2d2d] hover:text-[#ffc200]">
           Produtos
         </Link>
-        <Link href="/drivers" className="text-sm font-medium text-[#2d2d2d] hover:text-[#ffc200]">
+        <Link href="https://www.soluti.com.br/duvidas-e-suporte/suporte-certificado-a3/?srsltid=AfmBOorB6lFGLbQb6QHnVvwwWZDwVKP6zXY1jWyScC2PC54mpnz4W8B3" className="text-sm font-medium text-[#2d2d2d] hover:text-[#ffc200]">
           Drivers
         </Link>
-        <Link href="/contato" className="text-sm font-medium text-[#2d2d2d] hover:text-[#ffc200]">
+        <Link href="https://linktr.ee/leitzkecert" className="text-sm font-medium text-[#2d2d2d] hover:text-[#ffc200]">
           Contato
         </Link>
       </div>
-
+      
       <Button variant="outline" className="bg-[#ffc200] text-[#2d2d2d] hover:bg-[#ffc200]/90" onClick={() => redirect('https://api.whatsapp.com/send?phone=555399551783')} >
         Agendar horário
       </Button>

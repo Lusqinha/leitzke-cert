@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { redirect } from "next/navigation"
 
 interface CertificationCardProps {
   title: string
@@ -20,6 +21,7 @@ export function CertificationCard({ title, description, imageSrc }: Certificatio
         <Button 
           variant="secondary" 
           className="absolute top-4 left-4 bg-[#ffc200] text-[#2d2d2d] hover:bg-[#ffc200]/90"
+          onClick={() => redirect('https://api.whatsapp.com/send?phone=555399551783')}
         >
           Saiba Mais
         </Button>

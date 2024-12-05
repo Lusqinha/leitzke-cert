@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react'
+import { Instagram, Mail, MapPin, Phone } from 'lucide-react'
 
 export function Footer() {
   return (
@@ -17,8 +17,8 @@ export function Footer() {
             <ul className="space-y-2">
               <li><Link href="/" className="text-sm hover:text-[#ffc200]">Home</Link></li>
               <li><Link href="#produtos" className="text-sm hover:text-[#ffc200]">Produtos</Link></li>
-              <li><Link href="/drivers" className="text-sm hover:text-[#ffc200]">Drivers</Link></li>
-              <li><Link href="/contato" className="text-sm hover:text-[#ffc200]">Contato</Link></li>
+              <li><Link href="https://www.soluti.com.br/duvidas-e-suporte/suporte-certificado-a3/?srsltid=AfmBOorB6lFGLbQb6QHnVvwwWZDwVKP6zXY1jWyScC2PC54mpnz4W8B3" className="text-sm hover:text-[#ffc200]">Drivers</Link></li>
+              <li><Link href="https://linktr.ee/leitzkecert" className="text-sm hover:text-[#ffc200]">Contato</Link></li>
             </ul>
           </div>
           <div>
@@ -26,26 +26,20 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-[#ffc200]" />
-                <span className="text-sm">Rua Exemplo, 123 - Cidade, Estado</span>
+                <span className="text-sm">Rua Senador Pinheiro Machado, 461, Sala 5</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-[#ffc200]" />
-                <span className="text-sm">(00) 1234-5678</span>
+                <span className="text-sm">(53) 9  9955-1783</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-[#ffc200]" />
-                <span className="text-sm">contato@leitzkecert.com</span>
+                <span className="text-sm">denis@leitzkecert.com</span>
               </li>
             </ul>
             <div className="flex space-x-4 mt-4">
-              <Link href="#" className="text-white hover:text-[#ffc200]">
-                <Facebook className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="text-white hover:text-[#ffc200]">
+              <Link href="https://www.instagram.com/leitzkecert" className="text-white hover:text-[#ffc200]">
                 <Instagram className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="text-white hover:text-[#ffc200]">
-                <Linkedin className="h-5 w-5" />
               </Link>
             </div>
           </div>

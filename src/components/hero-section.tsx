@@ -5,7 +5,7 @@ import { PhoneMockup } from "./phone-mockup"
 
 export function HeroSection() {
   return (
-    <div className="min-h-screen bg-white text-[#2d2d2d]">
+    <div className="min-h-screen flex flex-col items-center bg-white text-[#2d2d2d]">
       <NavBar />
       <div className="container px-4 pt-12">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
