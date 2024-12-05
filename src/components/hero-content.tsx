@@ -1,5 +1,8 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from 'lucide-react'
+import { redirect } from "next/navigation"
 
 export function HeroContent() {
   return (
@@ -11,7 +14,7 @@ export function HeroContent() {
         A Leitzke Certificação Digital oferece soluções seguras e rápidas para certificados digitais A1, A3 Token e A3 Cartão, atendendo às necessidades de empresas e profissionais.
       </p>
       <div className="flex items-center gap-4">
-        <Button className="bg-[#ffc200] text-[#2d2d2d] hover:bg-[#ffc200]/90">
+        <Button className="bg-[#ffc200] text-[#2d2d2d] hover:bg-[#ffc200]/90" onClick={() => redirect('https://api.whatsapp.com/send?phone=555399551783')}>
           Solicitar Certificado <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
         <Button variant="link" className="text-[#2d2d2d] hover:text-[#ffc200]">

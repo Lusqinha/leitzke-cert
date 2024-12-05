@@ -1,10 +1,13 @@
+"use client"
+
+import { CertificationCard } from "./certification-card"
 import { Button } from "@/components/ui/button"
 import { ArrowUpRight } from 'lucide-react'
-import { CertificationCard } from "./certification-card"
+import { redirect } from "next/navigation"
 
 export function CertificationsSection() {
   return (
-    <section className="py-10 bg-white text-[#2d2d2d]">
+    <section className="py-10 bg-white text-[#2d2d2d]" id="produtos">
       <div className="container px-4">
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
           <h2 className="text-3xl md:text-4xl font-bold">Nossos Certificados</h2>
@@ -37,7 +40,7 @@ export function CertificationsSection() {
         </div>
 
         <div className="flex justify-center">
-          <Button className="bg-[#ffc200] text-[#2d2d2d] hover:bg-[#ffc200]/90">
+          <Button className="bg-[#ffc200] text-[#2d2d2d] hover:bg-[#ffc200]/90 text-2xl p-8 rounded-xl transition-all ease-in-out duration-300 hover:text-white hover:shadow-xl hover:shadow-yellow-300" onClick={() => redirect('https://api.whatsapp.com/send?phone=555399551783')}>
             Realizar agendamento
           </Button>
         </div>

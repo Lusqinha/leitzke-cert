@@ -16,8 +16,8 @@ export function Footer() {
             <h4 className="text-lg font-semibold mb-4">Links Rápidos</h4>
             <ul className="space-y-2">
               <li><Link href="/" className="text-sm hover:text-[#ffc200]">Home</Link></li>
-              <li><Link href="/servicos" className="text-sm hover:text-[#ffc200]">Serviços</Link></li>
-              <li><Link href="/sobre" className="text-sm hover:text-[#ffc200]">Sobre Nós</Link></li>
+              <li><Link href="#produtos" className="text-sm hover:text-[#ffc200]">Produtos</Link></li>
+              <li><Link href="/drivers" className="text-sm hover:text-[#ffc200]">Drivers</Link></li>
               <li><Link href="/contato" className="text-sm hover:text-[#ffc200]">Contato</Link></li>
             </ul>
           </div>
