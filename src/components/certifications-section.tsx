@@ -1,0 +1,48 @@
+import { Button } from "@/components/ui/button"
+import { ArrowUpRight } from 'lucide-react'
+import { CertificationCard } from "./certification-card"
+
+export function CertificationsSection() {
+  return (
+    <section className="py-10 bg-white text-[#2d2d2d]">
+      <div className="container px-4">
+        <div className="grid lg:grid-cols-2 gap-8 mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold">Nossos Certificados</h2>
+          <div className="flex items-center justify-between">
+            <p className="text-gray-600">
+              Oferecemos uma variedade de certificados digitais para atender às necessidades específicas de cada cliente.
+            </p>
+            <Button variant="link" className="text-[#ffc200] hidden lg:flex items-center gap-2 hover:text-[#ffc200]/90">
+              Ver todos os certificados <ArrowUpRight className="h-4 w-4" />
+            </Button>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <CertificationCard
+            title="Certificado A1"
+            description="Certificado digital armazenado no computador, ideal para empresas e profissionais que precisam de praticidade."
+            imageSrc="/CERTIFICADO A1.png"
+          />
+          <CertificationCard
+            title="Certificado A3 Token"
+            description="Certificado digital armazenado em dispositivo criptográfico portátil, oferecendo maior segurança e mobilidade."
+            imageSrc="/CERTIFICADO A3 TOKEN.png"
+          />
+          <CertificationCard
+            title="Certificado A3 Cartão"
+            description="Certificado digital armazenado em cartão inteligente, combinando alta segurança e praticidade."
+            imageSrc="/CERTIFICADO A3 CARTÃO.png"
+          />
+        </div>
+
+        <div className="flex justify-center">
+          <Button className="bg-[#ffc200] text-[#2d2d2d] hover:bg-[#ffc200]/90">
+            Realizar agendamento
+          </Button>
+        </div>
+      </div>
+    </section>
+  )
+}
+
