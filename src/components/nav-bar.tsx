@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { redirect } from "next/navigation"
+import { handleWhatsapp } from "@/lib/utils"
 
 export function NavBar() {
   return (
@@ -34,7 +34,7 @@ export function NavBar() {
         </Link>
       </div>
       
-      <Button variant="outline" className="bg-[#ffc200] text-[#2d2d2d] hover:bg-[#ffc200]/90" onClick={() => redirect('https://api.whatsapp.com/send?phone=555399551783')} >
+      <Button variant="default" className="bg-[#ffc200] text-[#2d2d2d] hover:bg-[#ffc200]/80 hover:text-white" onClick={() => handleWhatsapp()} >
         Agendar horário
       </Button>
     </nav>
