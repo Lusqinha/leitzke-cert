@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-import { redirect } from "next/navigation"
 import { useState } from "react"
 import { CertificationModal } from "./certification-modal"
 
