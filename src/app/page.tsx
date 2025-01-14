@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer"
 
 export default function Home() {
   return (
-    <main className=" w-full flex flex-col justify-center items-center">
+    <main className=" w-full gap-44 flex flex-col justify-between items-center">
       <HeroSection />
       <CertificationsSection />
       <BenefitsSection />
